@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+  <body class='box-border p-0 m-0'>
+    <div class='relative z-0'>
+      <!-- {/* First lane */} -->
+      <div class='flex h-[30px] w-full relative overflow-hidden bg-[#7B6756]'>
+        <div class="w-[500px] bg-[#483C31] transform -skew-x-35 -ml-10 z-10"></div>
+      </div>
+
+      <!-- {/* Second Line */} -->
+      <div class='flex h-[40px] w-full relative overflow-hidden bg-[#483C32]'>
+        <div class="w-[275px] bg-[#ffffff] transform -skew-x-35 -ml-10"></div>
+      </div>
+
+      <!-- {/* Triangle */} -->
+      <div
+        class='bg-transparent absolute top-[30px] left-[30px]'
+        style="
+          width: 0;
+          height: 0;
+          border-left: 100px solid transparent;
+          border-right: 100px solid transparent;
+          border-top: 172px solid #483C32;
+        "
+      ></div>
+
+      <!-- {/* White Lines */} -->
+      <div class="absolute left-[40px] top-13 -translate-y-1/9 flex flex-col justify-between h-[200px]">
+        <div class="absolute top-[-5px] left-[calc(100%+150px)] w-[13px] h-[100%] bg-white transform rotate-[30deg] origin-top-left">
+        </div>
+      </div>
+    </div>
+
+    <header class="max-w-full flex justify-between h-40 relative overflow-hidden">
+        <!-- {/* Kolom Kiri */} -->
+        <div class="flex flex-col max-w-max text-2sm leading-5 self-center ml-80 z-10">
+            <p class="font-bold">Krishand Software</p>
+            <p>Jakarta</p>
+            <p>Tel 021.7353764</p>
+            <p>NPWP : xx.xxx.xxx.x.xxx.xxx</p>
+        </div>
+
+        <!-- {/* Kolom Kanan (Logo + Nama Perusahaan) */}       -->
+        <div class="relative w-[550px] h-[150px] -mr-[40px] ">
+        <div class="absolute inset-0 bg-[#7B6756] transform skew-x-25 z-0"></div>
+            <div class="relative z-10 flex justify-start pt-6">
+                <div class="w-[108px] h-[91px] p-[8px] bg-red-600 mr-3 ml-20 flex items-center justify-center">
+                <img src="" alt="logo" />
+                </div>
+                <div class="self-center">
+                    <p class="text-white font-semibold text-sm">
+                    PT. KATTA INDONESIA <br />
+                    <span class="text-xs font-light italic">"ENHANCED "</span>
+                </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class='flex flex-col ml-auto mt-4 mr-30 leading-none max-w-max'>
+      <p class='font-bold text-2xl border-b-1 '>Purchase Request</p> <br />
+      <p class='font-light text-lg mt-[-15px]'>No. : PR/00002/02/2018</p>
+    </div>
+
+    <main class='mt-30 px-30'>
+      <div class='flex justify-between'>
+        <div class='self-end font-bold'>
+          <p>Please supply the following items :</p>
+        </div>
+        <div>
+          <p><span class='font-bold mr-20'>Date</span>: 02 Feb 2013</p>
+          <p><span class='font-bold mr-23'>Stc</span>: Stc A</p>
+          <p><span class='font-bold mr-20'>Page</span>: Page 1/1</p>
+        </div>
+      </div>
+      
+      <table class='table-auto w-full border-spacing-0 mt-4 font-semibold text-center'>
+        <thead>
+          <tr class='border-t-4 border-b-2 border-[#5e0a0a]'>
+            <th class='text-center px-4 py-2 '>No</th>
+            <th class='text-center px-4 py-2'>Item Code</th>
+            <th class='text-center px-4 py-2'>Description of Goods</th>
+            <th class='text-center px-4 py-2'>Unit</th>
+            <th class='text-center px-4 py-2'>Quantity</th>
+            <th class='text-center px-4 py-2'>Required Date</th>
+            <th class='text-center px-4 py-2'>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class='bg-[#780E0E3B] '>
+            <td class='px-4 py-2'>1</td>
+            <td class='px-4 py-2'>MM</td>
+            <td class='px-4 py-2'>Meja Makan</td>
+            <td class='px-4 py-2'>Pcs</td>
+            <td class='px-4 py-2 '>2</td>
+            <td class='px-4 py-2'>03/02/2018</td>
+            <td class='px-4 py-2'>500.000,00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class='mt-30 border-t-3 border-[#5e0a0a]'/>
+      <div class='flex justify-between'>
+        <div class='flex flex-col leading-none mt-2'>
+          <p class='mb-15'>Prefered Vendor .Achmad Hariyanto</p>
+          <p><span class='font-bold'> Remarks </span><br />Keperluan Pantry</p>
+        </div>
+        <div>
+          <table class='table-auto mt-4 border-3 border-[#5e0a0a] text-center font-semibold'>
+            <thead>
+              <tr>
+                <th class='border-2 border-[#5e0a0a] px-4 py-2 w-45'>Requested By</th>
+                <th class='border-2 border-[#5e0a0a] px-4 py-2 w-45'>Prepared By</th>
+                <th class='border-2 border-[#5e0a0a] px-4 py-2 w-45'>Aprroved By</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class='h-30'>
+                <td class='border-2 border-[#5e0a0a] px-4 py-2'></td>
+                <td class='border-2 border-[#5e0a0a] px-4 py-2'></td>
+                <td class='border-2 border-[#5e0a0a] px-4 py-2'></td>
+              </tr>
+              <tr>
+                <td class='border-2 border-[#5e0a0a] px-4 py-2'>Doni</td>
+                <td class='border-2 border-[#5e0a0a] px-4 py-2'>Ani</td>
+                <td class='border-2 border-[#5e0a0a] px-4 py-2'>Santi</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full flex items-end">
+      <!-- {/* Bagian kiri taupe */} -->
+      <div class="bg-[#483C32] h-[40px] w-150 relative">
+        <!-- {/* Segitiga sama kaki di atas taupe */} -->
+        <div
+          class="absolute -top-[60px] left-[13%]"
+          style="
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #483C32;
+          "
+        ></div>
+
+        <!-- {/* Segitiga lancip kanan*/} -->
+        <div
+          class="absolute right-[-20px] top-0"
+          style="
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent; 
+            border-bottom: 20px solid transparent;
+            border-left: 20px solid #483C32;
+          "
+        ></div>
+      </div>
+
+      <!-- {/* Bagian kanan Taupe */} -->
+      <div class="bg-[#7B6756] h-6 flex-1"></div>
+    </footer>
+ 
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>App2</title>
+</head>
+<body class='box-border p-0 m-0'>
+     <div class='relative z-0'>
+        <!-- {/* First lane */} -->
+        <div class='flex h-[60px] w-full relative overflow-hidden bg-[#7B6756]'>
+            <div class="w-[500px] bg-[#483C31] transform -skew-x-[35deg] -ml-[40px] z-10"></div>
+        </div>
+
+        <!-- {/* Second Line */} -->
+        <div class='flex h-[50px] w-full relative overflow-hidden bg-[#483C32]'>
+            <div class="w-[275px] bg-[#ffffff] transform -skew-x-[35deg] -ml-[40px]"></div>
+        </div>
+
+
+
+        <!-- {/* Triangle */} -->
+        <div
+            class='bg-transparent absolute top-[60px] left-[30px]'
+            style="
+            width: '0';
+            height: '0';
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 172px solid #483C32;
+            "
+        ></div>
+
+        <!-- {/* White Lines */} -->
+        <div class="absolute left-[50px] top-[52px] -translate-y-[11.111%] flex flex-col justify-between h-[200px]">
+            <div class="absolute top-[20px] left-[calc(100%+150px)] w-[15px] h-[100%] bg-white transform rotate-[30deg] origin-top-left">
+            </div>
+        </div>
+    </div>
+
+    <header class="max-w-full flex justify-between h-40 relative overflow-hidden">
+        <!-- {/* Kolom Kiri */} -->
+        <div class="flex flex-col max-w-max text-2xl leading-7 self-center ml-60 z-10">
+            <p class="font-bold">Krishand Software</p>
+            <p>Jakarta</p>
+            <p>Tel 021.7353764</p>
+            <p>NPWP : xx.xxx.xxx.x.xxx.xxx</p>
+        </div>
+
+        <!-- {/* Kolom Kanan (Logo + Nama Perusahaan) */}       -->
+        <div class="relative w-[700px] h-[auto] -mr-14 ">
+        <div class="absolute inset-0 bg-[#7B6756] transform skew-x-[25deg] z-0"></div>
+        <div class="relative z-10 flex px-6 py-10 justify-start items-center">
+            <div class="w-[108px] h-[91px] p-2 bg-red-600 mr-3 ml-20 flex items-center justify-center">
+            <img src="" alt="logo" />
+            </div>
+            <div class="self-center">
+                <p class="text-white font-semibold text-sm">
+                PT. KATTA INDONESIA <br />
+                <span class="text-xs font-light italic">"ENHANCED "</span>
+            </p>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div class='flex flex-col ml-auto mt-[20px] mr-[140px] leading-5 max-w-max '>
+      <p class='font-bold text-5xl border-b-1 '>Purchase Request</p> <br />
+      <p class='font-light text-3xl mt-[-15px]'>No. : PR/00002/02/2018</p>
+    </div>
+
+    <main class='mt-3 px-[140px]'>
+        <p class='font-bold'>Please supply the following items :</p>
+
+        <table class='border-separate border-spacing-y-2 table-auto w-full border-spacing-0 mt-1 font-semibold text-center'>
+        <thead>
+          <tr class='bg-[#780e0e] text-white border-b-20'>
+            <th class='text-center px-[16px] py-[8px] '>No</th>
+            <th class='text-center px-[16px] py-[8px]'>Item Code</th>
+            <th class='text-center px-[16px] py-[8px]'>Description of Goods</th>
+            <th class='text-center px-[16px] py-[8px]'>Unit</th>
+            <th class='text-center px-[16px] py-[8px]'>Quantity</th>
+            <th class='text-center px-[16px] py-[8px]'>UnitPrice</th>
+            <th class='text-center px-[16px] py-[8px]'>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class='bg-[#780E0E3B] border border-[#5e0a0a] border-x-0'>
+            <td class='px-[16px] py-[8px]'>1</td>
+            <td class='px-[16px] py-[8px]'>MM</td>
+            <td class='px-[16px] py-[8px]'>Meja Makan</td>
+            <td class='px-[16px] py-[8px]'>Pcs</td>
+            <td class='px-[16px] py-[8px] '>2</td>
+            <td class='px-[16px] py-[8px]'>550.000,00</td>
+            <td class='px-[16px] py-[8px]'>1.000.000,00</td>
+          </tr>
+          <tr class='bg-[#780E0E3B] border border-[#5e0a0a] border-x-0'>
+            <td class='px-[16px] py-[8px]'>2</td>
+            <td class='px-[16px] py-[8px]'>MT</td>
+            <td class='px-[16px] py-[8px]'>Meja Tulis</td>
+            <td class='px-[16px] py-[8px]'>Pcs</td>
+            <td class='px-[16px] py-[8px] '>2</td>
+            <td class='px-[16px] py-[8px]'>400.000,00</td>
+            <td class='px-[16px] py-[8px]'>800.000,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <hr class='mt-[200px] border-t-2 '/>
+    <div class='px-[12px]'>
+        <p class='font-semibold mb-[40px]'>Term of Payment : CurrentMonth 30 Days</p>
+
+        <div class='flex justify-between'>
+            <div class="flex flex-col space-y-1">
+               <p class='mb-10'><span class='font-bold'> Remaris </span><br /> Kebutuhan Internal</p>
+                <div class="flex">
+                    <span class="font-bold w-[100px]">Date</span>
+                    <span>:</span>
+                    <span class='ml-3'>03 Feb 2018</span>
+                </div>
+                <div class="flex">
+                    <span class="font-bold w-[100px]">Ref No.</span>
+                    <span>:</span>
+                    <span class='ml-3'>-</span>
+                </div>
+                <div class="flex">
+                    <span class="font-bold w-[100px]">PR No.</span>
+                    <span>:</span>
+                    <span class='ml-3'>PR00002/02/2018</span>
+                </div>
+                <div class="flex">
+                    <span class="font-bold w-[100px]">Currency</span>
+                    <span>:</span>
+                    <span class='ml-3'>IDR</span>
+                </div>
+                <div class="flex">
+                    <span class="font-bold w-[100px]">Page</span>
+                    <span>:</span>
+                    <span class='ml-3'>Page 1/1</span>
+                </div>
+            </div>
+
+            <div class='w-[300px]'>
+                <div class='border-b-2 py-2 border-[#780e0e] flex justify-between px-2'>
+                    <span class='font-semibold'>Sub Total</span>1.800.000,00
+                </div>
+                <div class='border-b-2 py-2 border-[#780e0e] flex justify-between px-2'>
+                    <span class='font-semibold'>Discount</span>1.800.000,00
+                </div>
+                <div class='border-b-2 py-2 border-[#780e0e] flex justify-between px-2'>
+                    <span class='font-semibold '>VAT</span>1.800.000,00
+                </div>
+                <div class='border-b-2 py-2 border-[#780e0e] flex justify-between px-2'>
+                    <span class='font-semibold '>Freight Cost</span>1.800.000,00
+                </div>
+                <div class='border-b-2 py-2 border-[#780e0e] flex justify-between px-2'>
+                    <span class='font-semibold '>Sub Total</span>1.800.000,00
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='mt-[80px] flex justify-center gap-[60px]'>
+        <div class='relative border-[3px] border-[#5e0a0a] py-[24px] pl-[32px] pr-[60px]'>
+            <div class='absolute -top-5 left-6 bg-[#5e0a0a] text-white px-5 py-2 font-bold'>
+                Vendor
+            </div>
+            
+            <div class='mt-4'>       
+                <p>Raihan Addo</p>
+                <p>Jl. H Nawi Raya No.10 Gandaria Sel 12420</p>
+                <p>Jakarta Selatan</p>
+            </div>
+
+            <div class="mt-10">
+                <p>Tel : </p>
+                <p>Fax : </p>
+                <p>Atn</p>
+            </div>
+        </div>
+        <div class='relative border-[3px] border-[#5e0a0a] py-[24px] pl-[32px] pr-[60px] max-w-max'>
+            <div class='absolute -top-7 left-6 bg-[#5e0a0a] text-white text-sm px-[32px] py-[8px] font-bold '>
+                Price of <br />Delivery
+            </div>
+            
+            <div class='mt-4'>
+                <p>SMK BAKTI IDHATAJl. <br />
+                 Melati No.25 Cilandak Bar 12430 <br /> Jakarta Selatan</p>
+            </div>
+        </div>
+    </div>
+
+    <table class='table-auto mt-20 border-[3px] border-[#5e0a0a] text-center font-semibold float-end '>
+            <thead>
+              <tr>
+                <th class='border-2 border-[#5e0a0a] px-[16px] py-[8px] w-35'>Requested By</th>
+                <th class='border-2 border-[#5e0a0a] px-[16px] py-[8px] w-35'>Prepared By</th>
+                <th class='border-2 border-[#5e0a0a] px-[16px] py-[8px] w-35'>Aprroved By</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class='h-[100px]'>
+                <td class='border-2 border-[#5e0a0a] px-[16px] py-[8px]'></td>
+                <td class='border-2 border-[#5e0a0a] px-[16px] py-[8px]'></td>
+                <td class='border-2 border-[#5e0a0a] px-[16px] py-[8px]'></td>
+              </tr>
+              <tr>
+                <td class='border-2 border-[#5e0a0a] px-[16px] py-[8px]'>Doni</td>
+                <td class='border-2 border-[#5e0a0a] px-[16px] py-[8px]'>Ani</td>
+                <td class='border-2 border-[#5e0a0a] px-[16px] py-[8px]'>Santi</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <footer class="w-full flex items-end">
+      <!-- {/* Bagian kiri taupe */} -->
+      <div class="bg-[#483C32] h-[60px] w-[920px] relative">
+        <!-- {/* Segitiga sama kaki di atas taupe */} -->
+        <div
+          class="absolute -top-[60px] left-[3%]"
+          style="
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #483C32;
+          "
+        ></div>
+
+        <!-- {/* Segitiga lancip kanan*/} -->
+        <div
+          class="absolute left-[920px] top-0"
+          style="
+            width: 0;
+            height: 0;
+            border-top: 30px solid transparent; 
+            border-bottom: 30px solid transparent;
+            border-left: 30px solid #483C32;
+          "
+        ></div>
+      </div>
+
+      <!-- {/* Bagian kanan Taupe */} -->
+      <div class="bg-[#7B6756] h-8 flex-1"></div>
+    </footer>
+    </body>
+</html>
